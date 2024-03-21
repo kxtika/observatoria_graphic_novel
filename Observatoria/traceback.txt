@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 5, in script
+    show image cats_and_laptop_bg at dissolve
+  File "game/script.rpy", line 5, in <module>
+    show image cats_and_laptop_bg at dissolve
+NameError: name 'cats_and_laptop_bg' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 5, in script
+    show image cats_and_laptop_bg at dissolve
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1069, in show_imspec
+    expression = renpy.python.py_eval(expression)
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 5, in <module>
+    show image cats_and_laptop_bg at dissolve
+NameError: name 'cats_and_laptop_bg' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
+Observatoria 1.0
+Thu Mar 21 11:14:15 2024
