@@ -2,7 +2,7 @@
 
 label start:
     scene black
-    show image cats_and_laptop_bg at dissolve
+    show image "images/cats_and_laptop_bg.png" at dissolve
     play music space_theme
 
     "As the development of technology advanced, so did the space exploration."
