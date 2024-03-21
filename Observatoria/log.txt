@@ -1,10 +1,10 @@
-2024-03-21 11:22:14 UTC
+2024-03-21 18:28:09 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
 Early init took 0.05s
 Loading error handling took 0.02s
-Loading script took 0.07s
+Loading script took 0.11s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -12,6 +12,7 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\kt201\\AppData\\Roaming/RenPy/backups\\Observatoria':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -19,18 +20,18 @@ Initial gc took 0.03s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.19s
+Creating interface object took 0.25s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.13s
+Interface start took 0.14s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -40,27 +41,33 @@ Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 529.04'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1730, 973) drawable=(1730, 973)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 5, in script
-    show image cats_and_laptop_bg at dissolve
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1069, in show_imspec
-    expression = renpy.python.py_eval(expression)
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 5, in <module>
-    show image cats_and_laptop_bg at dissolve
-NameError: name 'cats_and_laptop_bg' is not defined
+  File "game/script.rpy", line 29, in script call
+    call dialogue_scene_1
+  File "game/script.rpy", line 47, in script call
+    call observation_game.run_observation_game
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1416, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 29, in script call
+    call dialogue_scene_1
+  File "game/script.rpy", line 47, in script call
+    call observation_game.run_observation_game
+  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'observation_game.run_observation_game'.
 
 While running game code:
-  File "game/script.rpy", line 5, in script
-    show image cats_and_laptop_bg at dissolve
-  File "game/script.rpy", line 5, in <module>
-    show image cats_and_laptop_bg at dissolve
-NameError: name 'cats_and_laptop_bg' is not defined
+  File "game/script.rpy", line 29, in script call
+    call dialogue_scene_1
+  File "game/script.rpy", line 47, in script call
+    call observation_game.run_observation_game
+  File "game/script.rpy", line 29, in script call
+    call dialogue_scene_1
+  File "game/script.rpy", line 47, in script call
+    call observation_game.run_observation_game
+ScriptError: could not find label 'observation_game.run_observation_game'.

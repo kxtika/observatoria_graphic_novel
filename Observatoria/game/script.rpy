@@ -2,7 +2,7 @@
 
 label start:
     scene black
-    show image "images/cats_and_laptop_bg.png" at dissolve
+    show image "images/spacecraft_bg.png"
     play music space_theme
 
     "As the development of technology advanced, so did the space exploration."
@@ -30,10 +30,13 @@ label start:
     return
 
 # Define the dialogue scenes including the mini-games
+define s = Character("Santos", image="santos_image")
+define k = Character("Krystal")
+
 label dialogue_scene_1:
-    scene laptop_bg
-    show santos normal at left
-    show krystal normal at right
+    scene spacecraft_bg
+    show santos_image at right
+    show krystal at left
 
     s "Krystal, do you see that?"
     k "See what, Santos? I'm busy analyzing the data from our last scan."
