@@ -1,15 +1,26 @@
-﻿# Ren'Py script with main storyline, dialogue, and gameplay logic
+﻿init python:
+    import random
+
+    class Timer:
+        def __init__(self, duration):
+            self.duration = duration
+            self.elapsed = 0
+
+        def update(self):
+            self.elapsed += 0.1
+            self.duration -= 0.1
+
+        def is_time_up(self):
+            return self.duration <= 0
 
 label start:
     scene black
     show image "images/spacecraft_bg.png"
-    play music space_theme
+    play music "space_theme.mp3"
 
-    "As the development of technology advanced, so did the space exploration."
+    "As the development of technology advanced, so did space exploration."
     "Most of the work was done by computers, some by humans (yes, they still exist), and some by… cats."
     "Cats."
-    "They always loved laptops, didn’t they?"
-
     "In the vastness of space, where stars shimmered like diamonds and planets danced in a cosmic ballet,"
     "two extraordinary felines, Santos and Krystal, embarked on a mission unlike any other."
     "Their destination: the Observatoria, a mysterious beacon deep in the heart of the galaxy,"
@@ -18,7 +29,7 @@ label start:
     "Santos, with his soulful eyes and gentle demeanor, was a dreamer who found beauty in every corner of the cosmos."
     "Krystal, practical and efficient, led the way with a no-nonsense attitude and a laser focus on progress."
 
-    "Together, they journeyed through the cosmos, their trusty laptops and keen senses their only companions."
+    "Together, they journeyed through the cosmos, their trusty board computer and keen senses their only companions."
 
     "But as they delved deeper into the unknown, they would face challenges that tested their bond and their skills."
 
@@ -27,24 +38,72 @@ label start:
     scene black
     stop music fadeout 2.0
     call dialogue_scene_1
-    return
 
-# Define the dialogue scenes including the mini-games
-define s = Character("Santos", image="santos_image")
-define k = Character("Krystal")
+    define s = Character("Santos")
+    define k = Character("Krystal")
+
+    return
 
 label dialogue_scene_1:
     scene spacecraft_bg
     show santos_image at right
-    show krystal at left
+    show krystal_image at left
 
     s "Krystal, do you see that?"
     k "See what, Santos? I'm busy analyzing the data from our last scan."
     s "There! A flicker of light in the distance. It could be a signal!"
-    k "Hmm, let me take a look."
+    k "Hmm, let's take a look."
 
-    "Help Krystal analyze the data to decipher the signal."
-    call observation_game.run_observation_game
+    menu:
+        "Investigate the flicker":
+            jump investigate_flicker
+        "Focus on analyzing the data":
+            jump analyze_data
+
+label investigate_flicker:
+    s "Let's check it out, Krystal."
+    "You and Krystal focus on scanning the area for any incoming signals."
+
+    $ timer = Timer(10)
+    $ flickers_clicked = 0
+
+    while not timer.is_time_up():
+        scene space_bg_with_signals
+
+        # Show flickers at random positions
+        $ flicker_positions = []
+        $ flicker_count = renpy.random.randint(15, 24)
+        $ i = 0
+        while i < flicker_count:
+            $ x_pos = renpy.random.randint(100, 900)
+            $ y_pos = renpy.random.randint(100, 500)
+            $ flicker_positions.append((x_pos, y_pos))
+            $ i += 1
+
+        $ j = 0
+        while j < len(flicker_positions):
+            $ x_pos = flicker_positions[j][0]
+            $ y_pos = flicker_positions[j][1]
+            imagebutton auto "images/flicker_of_light.png" action [SetVariable("flickers_clicked", flickers_clicked + 1), Hide("images/flicker_of_light.png"), Call("update_flickers_clicked_label")] xpos x_pos ypos y_pos
+            $ j += 1
+
+        # Update the timer
+        $ timer.update()
+
+    if flickers_clicked >= 12:
+        "You spot a faint signal coming from an unrecognized source."
+        # Continue with the story based on the outcome
+    else:
+        "Unfortunately, you didn't detect any signals in the area."
+
+
+label analyze_data:
+    k "Alright, let's keep our focus on the task at hand."
+    # Continue with the story without additional gameplay
+    jump continue_story
+
+label continue_story:
+    # Continue with the rest of the dialogue
 
 label dialogue_scene_2:
     scene laptop_bg
@@ -54,7 +113,7 @@ label dialogue_scene_2:
     k "Let's do this, Santos."
 
     "Help Santos and Krystal decrypt the signal together."
-    call decryption_game.run_decryption_game
+    #call decryption_game.run_decryption_game
 
 label dialogue_scene_3:
     scene laptop_bg
@@ -66,6 +125,6 @@ label dialogue_scene_3:
     "As they entered the Observatoria, Santos and Krystal knew that their journey was just beginning."
     "But with their friendship and skills, they were ready to face whatever mysteries the universe had in store."
 
-    "This is their story. This is Observatoria."
+    "Images were generated by GenCraft AI. Credit for the flickering light goes to 0melapicks on Freepik."
 
     return

@@ -1,34 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 29, in script call
+  File "game/script.rpy", line 40, in script call
     call dialogue_scene_1
-  File "game/script.rpy", line 47, in script call
-    call observation_game.run_observation_game
-  File "game/script.rpy", line 29, in script call
-    call dialogue_scene_1
-  File "game/script.rpy", line 47, in script call
-    call observation_game.run_observation_game
-ScriptError: could not find label 'observation_game.run_observation_game'.
+  File "game/script.rpy", line 88, in script
+    show image "images/flicker_of_light.png" at x_pos, y_pos
+TypeError: 'int' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 29, in script call
+  File "game/script.rpy", line 40, in script call
     call dialogue_scene_1
-  File "game/script.rpy", line 47, in script call
-    call observation_game.run_observation_game
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1416, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 29, in script call
-    call dialogue_scene_1
-  File "game/script.rpy", line 47, in script call
-    call observation_game.run_observation_game
-  File "C:\Users\kt201\Downloads\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'observation_game.run_observation_game'.
+  File "game/script.rpy", line 88, in script
+    show image "images/flicker_of_light.png" at x_pos, y_pos
+  File "C:\Users\kt201\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\kt201\RenPy\renpy-8.2.1-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\kt201\RenPy\renpy-8.2.1-sdk\renpy\exports.py", line 751, in show
+    img = i(img) # type: ignore
+TypeError: 'int' object is not callable
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Observatoria 1.0
-Thu Mar 21 18:29:00 2024
+Wed Apr  3 20:16:19 2024

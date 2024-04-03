@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 40: end of line expected.
-    show santos normal at screen center
-                                 ^
+File "game/script.rpy", line 61: expected a keyword argument, colon, or end of line.
+    timer value 1.0 action Jump("update_time")
+                ^
 
-File "game/script.rpy", line 41: end of line expected.
-    show krystal normal at screen center
-                                  ^
+File "game/script.rpy", line 71: end of line expected.
+    jump flicker_loop if time_left > 0 else times_up
+                      ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Mar 21 12:22:31 2024
+Wed Apr  3 21:25:35 2024

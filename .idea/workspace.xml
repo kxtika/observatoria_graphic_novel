@@ -4,153 +4,170 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a26e8d6-eec6-4042-b6f8-06a2dcaf16b1" name="Changes" comment="bg image added">
-      <change afterPath="$PROJECT_DIR$/Observatoria/errors.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/audio/space_theme.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui.rpy.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/bottom.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/bottom.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/left.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/left.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/right.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/right.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/top.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/top.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_selected_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_selected_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/hover_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/idle_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/quick_hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/quick_idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_selected_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_selected_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_hover_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_idle_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/frame.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/namebox.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/notify.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/nvl.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/confirm.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/game_menu.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/main_menu.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/bottom.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/bottom.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/left.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/left.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/right.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/right.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/top.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/top.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_selected_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_selected_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/hover_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/idle_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_selected_foreground.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_selected_foreground.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_hover_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_hover_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_idle_background.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_idle_background.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/nvl.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/game_menu.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/main_menu.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/textbox.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/skip.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_bar.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_bar.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_thumb.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_thumb.png.2.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/textbox.png.1.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/images/spacecraft_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/images/spacecraft_bg_4k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/saves/auto-2-LT1.save" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Observatoria/game/screens.rpy.1.bak" afterDir="false" />
+    <list default="true" id="8a26e8d6-eec6-4042-b6f8-06a2dcaf16b1" name="Changes" comment="santos image added">
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/decryption_game.rpyc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui.rpy.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/bottom.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/left.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/right.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/top.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_selected_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_hover_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_idle_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/hover_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/idle_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/quick_hover_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/quick_idle_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_selected_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_hover_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_idle_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/frame.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/namebox.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/notify.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/nvl.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/confirm.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/game_menu.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/main_menu.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/bottom.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/left.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/right.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/top.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_selected_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_hover_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_idle_background.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/hover_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/idle_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_selected_foreground.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_hover_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_idle_background.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/nvl.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/game_menu.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/main_menu.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/textbox.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/skip.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_bar.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_thumb.png.3.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/gui/textbox.png.2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/images/krystal_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/observation_game.rpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/observation_game.rpyc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observatoria/game/screens.rpy.2.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/errors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/errors.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/cache/bytecode-39.rpyb" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/cache/bytecode-39.rpyb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/cache/screens.rpyb" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/cache/screens.rpyb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/cache/shaders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/cache/shaders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Observatoria/game/images/cats_and_laptop_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/decryption_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/decryption_game.rpy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui.rpy" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui.rpy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui.rpyc" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui.rpyc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/bar/bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/bar/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/bar/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/bar/top.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/bar/top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/check_selected_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/check_selected_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_hover_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_hover_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_idle_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/choice_idle_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_selected_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/radio_selected_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_hover_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_hover_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_idle_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/button/slot_idle_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/frame.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/frame.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/notify.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/notify.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/nvl.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/nvl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/overlay/confirm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/confirm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/overlay/game_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/game_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/overlay/main_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/overlay/main_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/top.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/bar/top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_selected_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/check_selected_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_hover_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_hover_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_idle_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/choice_idle_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_selected_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/radio_selected_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_hover_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_hover_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_idle_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/button/slot_idle_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/nvl.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/nvl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/game_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/game_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/main_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/overlay/main_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/horizontal_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/scrollbar/vertical_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/horizontal_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/slider/vertical_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/phone/textbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/phone/textbox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/horizontal_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/scrollbar/vertical_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/skip.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/skip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/horizontal_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_hover_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/slider/vertical_idle_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/gui/textbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/gui/textbox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/images/santos_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/images/santos_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/observation_game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/puzzle_game.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/auto-1-LT1.save" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/auto-1-LT1.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/auto-2-LT1.save" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/auto-2-LT1.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/auto-3-LT1.save" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/auto-3-LT1.save" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/auto-4-LT1.save" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/auto-4-LT1.save" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/navigation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/saves/persistent" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/saves/persistent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observatoria/game/screens.rpyc" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/screens.rpyc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/script.rpy" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/script.rpy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/game/script.rpyc" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/game/script.rpyc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Observatoria/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Observatoria/log.txt" afterDir="false" />
@@ -169,14 +186,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2dxDW3JmLyLCcXJxiSgd2AL3twi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -190,7 +213,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Hearify/QuizAPI"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -198,6 +222,30 @@
       <recent name="C:\Users\kt201\PycharmProjects\Observatoria\Observatoria\game\images" />
       <recent name="C:\Users\kt201\PycharmProjects\Observatoria\Observatoria\game" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Observatoria" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -255,13 +303,22 @@
       <option name="project" value="LOCAL" />
       <updated>1711020222613</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="santos image added">
+      <option name="closed" value="true" />
+      <created>1711059298051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711059298051</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="bg image added" />
-    <option name="LAST_COMMIT_MESSAGE" value="bg image added" />
+    <MESSAGE value="santos image added" />
+    <option name="LAST_COMMIT_MESSAGE" value="santos image added" />
   </component>
 </project>
