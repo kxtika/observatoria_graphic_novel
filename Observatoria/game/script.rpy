@@ -1,17 +1,48 @@
 ﻿init python:
     import random
 
-    class Timer:
-        def __init__(self, duration):
-            self.duration = duration
-            self.elapsed = 0
+    def click_counter():
 
-        def update(self):
-            self.elapsed += 0.1
-            self.duration -= 0.1
+        global click_times, start_timer, count_clicks, flicker_caught
+        if click_times == 0:
+            start_timer = True
 
-        def is_time_up(self):
-            return self.duration <= 0
+        click_times += 1
+        renpy.restart_interaction()
+
+        if click_times >= 12:
+            count_clicks = False
+            flicker_caught = True
+
+    def random_position():
+        return (random.uniform(0.1, 0.9), random.uniform(0.1, 0.9))
+
+transform button_hover:
+    on hover:
+        easein 0.2 zoom 1.05
+    on idle:
+        easein 0.2 zoom 1.0
+
+screen flicker_counter_game:
+    image "space_bg_with_signals.png"
+    text "Flickers caught: [click_times] Time left: [countdown_time]" align(0.5, 0.65) outlines[(absolute(3.0), "#000000", 0, 0)] size 45
+
+    imagebutton idle "flicker_of_light_big" pos random_position() sensitive count_clicks action Function(click_counter) at button_hover
+
+    if not count_clicks:
+        if click_times >= 12:
+            text "You received a faint signal from an unrecognised source!" align(0.5, 0.75) outlines[(absolute(3.0), "#000000", 0, 0)] size 45
+        else:
+            text "The flicker of light is gone, sorry" align(0.5, 0.75) outlines[(absolute(3.0), "#000000", 0, 0)] size 45
+
+    if start_timer:
+        timer 1.0 action If(countdown_time > 0, SetVariable("countdown_time", countdown_time - 1), SetVariable("count_clicks", False)) repeat countdown_time > 0
+
+default click_times = 0
+default count_clicks = True
+default countdown_time = 20
+default start_timer = False
+default flicker_caught = False
 
 label start:
     scene black
@@ -62,40 +93,24 @@ label dialogue_scene_1:
 
 label investigate_flicker:
     s "Let's check it out, Krystal."
-    "You and Krystal focus on scanning the area for any incoming signals."
+    "You focus on scanning the area for any incoming signals. Catch as many flickers as you can!"
 
-    $ timer = Timer(10)
-    $ flickers_clicked = 0
+    call screen flicker_counter_game
 
-    while not timer.is_time_up():
-        scene space_bg_with_signals
-
-        # Show flickers at random positions
-        $ flicker_positions = []
-        $ flicker_count = renpy.random.randint(15, 24)
-        $ i = 0
-        while i < flicker_count:
-            $ x_pos = renpy.random.randint(100, 900)
-            $ y_pos = renpy.random.randint(100, 500)
-            $ flicker_positions.append((x_pos, y_pos))
-            $ i += 1
-
-        $ j = 0
-        while j < len(flicker_positions):
-            $ x_pos = flicker_positions[j][0]
-            $ y_pos = flicker_positions[j][1]
-            imagebutton auto "images/flicker_of_light.png" action [SetVariable("flickers_clicked", flickers_clicked + 1), Hide("images/flicker_of_light.png"), Call("update_flickers_clicked_label")] xpos x_pos ypos y_pos
-            $ j += 1
-
-        # Update the timer
-        $ timer.update()
-
-    if flickers_clicked >= 12:
-        "You spot a faint signal coming from an unrecognized source."
-        # Continue with the story based on the outcome
+    if flicker_caught:
+        jump flicker_found_branch
     else:
-        "Unfortunately, you didn't detect any signals in the area."
+        jump flicker_not_found_branch
 
+
+label flicker_found_branch:
+    s "Looks like we're onto something!"
+    k "Let's see if we can establish decent connection with the source of the signal."
+
+label flicker_not_found_branch:
+    s "I'm sorry I disturbed you and we haven't found anything."
+    k "Don't worry, it was still worth a try."
+    k "I'll just get back to work then."
 
 label analyze_data:
     k "Alright, let's keep our focus on the task at hand."
@@ -105,26 +120,27 @@ label analyze_data:
 label continue_story:
     # Continue with the rest of the dialogue
 
-label dialogue_scene_2:
-    scene laptop_bg
-    s "This encryption is quite complex, Krystal. We'll need to combine our skills to crack it."
-    k "Agreed. I'll handle the algorithm while you focus on visual patterns."
-    s "Got it! Teamwork makes the dream work, right?"
-    k "Let's do this, Santos."
 
-    "Help Santos and Krystal decrypt the signal together."
-    #call decryption_game.run_decryption_game
-
-label dialogue_scene_3:
-    scene laptop_bg
-    s "We made it, Krystal! The Observatoria."
-    k "It's magnificent!"
-    s "And with your keen observations and my quick actions, we conquered every challenge."
-    k "Together, there's nothing we can't overcome."
-
-    "As they entered the Observatoria, Santos and Krystal knew that their journey was just beginning."
-    "But with their friendship and skills, they were ready to face whatever mysteries the universe had in store."
-
-    "Images were generated by GenCraft AI. Credit for the flickering light goes to 0melapicks on Freepik."
-
-    return
+# label dialogue_scene_2:
+#     scene laptop_bg
+#     s "This encryption is quite complex, Krystal. We'll need to combine our skills to crack it."
+#     k "Agreed. I'll handle the algorithm while you focus on visual patterns."
+#     s "Got it! Teamwork makes the dream work, right?"
+#     k "Let's do this, Santos."
+#
+#     "Help Santos and Krystal decrypt the signal together."
+#     #call decryption_game.run_decryption_game
+#
+# label dialogue_scene_3:
+#     scene laptop_bg
+#     s "We made it, Krystal! The Observatoria."
+#     k "It's magnificent!"
+#     s "And with your keen observations and my quick actions, we conquered every challenge."
+#     k "Together, there's nothing we can't overcome."
+#
+#     "As they entered the Observatoria, Santos and Krystal knew that their journey was just beginning."
+#     "But with their friendship and skills, they were ready to face whatever mysteries the universe had in store."
+#
+#     "Images were generated by GenCraft AI. Credit for the flickering light goes to 0melapicks on Freepik."
+#
+#     return

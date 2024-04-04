@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 61: expected a keyword argument, colon, or end of line.
-    timer value 1.0 action Jump("update_time")
-                ^
-
-File "game/script.rpy", line 71: end of line expected.
-    jump flicker_loop if time_left > 0 else times_up
-                      ^
+File "game/script.rpy", line 100: expected menuitem
+    if flicker_caught:
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Apr  3 21:25:35 2024
+Thu Apr  4 21:00:15 2024
