@@ -1,22 +1,37 @@
-﻿init python:
+﻿########################### DEFAULT VARIABLES #################################
+default click_times = 0
+default count_clicks = True
+default countdown_time = 20
+default start_timer = False
+default flicker_caught = False
+
+######################### PYTHON FUNCTIONS #####################################
+init python:
     import random
 
     def click_counter():
-
         global click_times, start_timer, count_clicks, flicker_caught
         if click_times == 0:
             start_timer = True
 
         click_times += 1
-        renpy.restart_interaction()
 
         if click_times >= 12:
             count_clicks = False
             flicker_caught = True
+            renpy.jump("flicker_found")
 
     def random_position():
         return (random.uniform(0.1, 0.9), random.uniform(0.1, 0.9))
 
+    def time_up():
+       global start_timer, count_clicks
+       start_timer = False
+       count_clicks = False
+       if not flicker_caught:
+           renpy.jump("flicker_not_found")
+
+################## SCREEN FLICKER COUNTER GAME ########################
 transform button_hover:
     on hover:
         easein 0.2 zoom 1.05
@@ -37,13 +52,11 @@ screen flicker_counter_game:
 
     if start_timer:
         timer 1.0 action If(countdown_time > 0, SetVariable("countdown_time", countdown_time - 1), SetVariable("count_clicks", False)) repeat countdown_time > 0
+        timer countdown_time action Function(time_up)
 
-default click_times = 0
-default count_clicks = True
-default countdown_time = 20
-default start_timer = False
-default flicker_caught = False
+############## SCREEN ESTABLISH CONNECTION GAME ############################
 
+######################## MAIN SCRIPT #######################################
 label start:
     scene black
     show image "images/spacecraft_bg.png"
@@ -92,29 +105,38 @@ label dialogue_scene_1:
             jump analyze_data
 
 label investigate_flicker:
+    scene spacecraft_bg
+    show santos_image at right
+    show krystal_image at left
     s "Let's check it out, Krystal."
     "You focus on scanning the area for any incoming signals. Catch as many flickers as you can!"
 
     call screen flicker_counter_game
+    return
 
-    if flicker_caught:
-        jump flicker_found_branch
-    else:
-        jump flicker_not_found_branch
-
-
-label flicker_found_branch:
+label flicker_found:
+    scene spacecraft_bg
+    show santos_image at right
+    show krystal_image at left
     s "Looks like we're onto something!"
-    k "Let's see if we can establish decent connection with the source of the signal."
+    k "Let's see if we can establish a decent connection with the source of the signal."
 
-label flicker_not_found_branch:
+    call screen establish_connection_game
+    return
+
+label flicker_not_found:
+    scene spacecraft_bg
+    show santos_image at right
+    show krystal_image at left
     s "I'm sorry I disturbed you and we haven't found anything."
     k "Don't worry, it was still worth a try."
     k "I'll just get back to work then."
 
 label analyze_data:
+    scene spacecraft_bg
+    show santos_image at right
+    show krystal_image at left
     k "Alright, let's keep our focus on the task at hand."
-    # Continue with the story without additional gameplay
     jump continue_story
 
 label continue_story:
