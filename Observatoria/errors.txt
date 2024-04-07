@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 100: expected menuitem
-    if flicker_caught:
-    ^
+File "game/script.rpy", line 50: expected an indented block
+    global finished_pieces
+     ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Apr  4 21:00:15 2024
+Sun Apr  7 19:19:16 2024

@@ -5,6 +5,12 @@ default countdown_time = 20
 default start_timer = False
 default flicker_caught = False
 
+default wave_pieces = 6
+default full_page_size = (960, 521)
+default piece_coordinates = [(128, 267), (254, 267), (131, 353), (131, 730), (130, 459), (657, 540)]
+default initial_coordinates = []
+default finished_pieces = 0
+
 ######################### PYTHON FUNCTIONS #####################################
 init python:
     import random
@@ -31,6 +37,29 @@ init python:
        if not flicker_caught:
            renpy.jump("flicker_not_found")
 
+    def setup_puzzle():
+        for i in range(wave_pieces):
+            start_x = 1000
+            start_y = 200
+            end_x = 1700
+            end_y = 800
+            rand_loc = (renpy.random.randint(start_x, end_x), renpy.random.randint(start_y, end_y))
+            initial_coordinates.append(rand_loc)
+
+    def piece_drop(dropped_on, dragged_piece):
+        global finished_pieces
+
+        distance_threshold = 20
+        distance = ((dropped_on.x - dragged_piece[0].x)**2 + (dropped_on.y - dragged_piece[0].y)**2)**0.5
+
+        if distance <= distance_threshold:
+            dragged_piece[0].snap(dropped_on.x, dropped_on.y)
+            dragged_piece[0].draggable = False
+            finished_pieces += 1
+
+            if finished_pieces == wave_pieces:
+                renpy.jump("connection_established")
+
 ################## SCREEN FLICKER COUNTER GAME ########################
 transform button_hover:
     on hover:
@@ -55,6 +84,37 @@ screen flicker_counter_game:
         timer countdown_time action Function(time_up)
 
 ############## SCREEN ESTABLISH CONNECTION GAME ############################
+screen establish_connection_game:
+    image "connection_bg.png"
+    text "Pieces in the right place: [finished_pieces]" align(0.5, 0.1) size 30 color "#FFFFFF"
+    frame:
+        background "waves_frame.png"
+        xysize full_page_size
+        anchor(0, 0)
+        pos(130, 267)
+
+    draggroup:
+        for i in range(wave_pieces):
+            drag:
+                drag_name i
+                pos initial_coordinates[i]
+                anchor(0, 0)
+                focus_mask True
+                drag_raise True
+                image "Pieces/piece-%s.png" % (i + 1)
+
+        for i in range(wave_pieces):
+            drag:
+                drag_name i
+                draggable False
+                droppable True
+                dropped piece_drop
+                pos piece_coordinates[i]
+                anchor(0, 0)
+                focus_mask True
+                image "Pieces/piece-%s.png" % (i + 1) alpha 0.0
+
+
 
 ######################## MAIN SCRIPT #######################################
 label start:
@@ -109,7 +169,7 @@ label investigate_flicker:
     show santos_image at right
     show krystal_image at left
     s "Let's check it out, Krystal."
-    "You focus on scanning the area for any incoming signals. Catch as many flickers as you can!"
+    "Focus on scanning the area for any incoming signals. Catch as many flickers as you can!"
 
     call screen flicker_counter_game
     return
@@ -120,7 +180,9 @@ label flicker_found:
     show krystal_image at left
     s "Looks like we're onto something!"
     k "Let's see if we can establish a decent connection with the source of the signal."
+    "Reassemble the waves together to establish a connection."
 
+    $setup_puzzle()
     call screen establish_connection_game
     return
 
@@ -132,26 +194,28 @@ label flicker_not_found:
     k "Don't worry, it was still worth a try."
     k "I'll just get back to work then."
 
+    jump analyze_data
+
 label analyze_data:
     scene spacecraft_bg
     show santos_image at right
     show krystal_image at left
     k "Alright, let's keep our focus on the task at hand."
-    jump continue_story
+    s "What do we have here?"
+    k "Just a bunch of metrics captured over the last week."
+    
 
-label continue_story:
-    # Continue with the rest of the dialogue
 
+label connection_established:
+    scene laptop_bg
+    k "We got a message! However, I think it's encrypted."
+    s "This encryption is quite complex, Krystal. We'll need to combine our skills to crack it."
+    k "Agreed. I'll handle the algorithm while you focus on visual patterns."
+    s "Got it! Teamwork makes the dream work, right?"
+    k "Let's do this, Santos."
 
-# label dialogue_scene_2:
-#     scene laptop_bg
-#     s "This encryption is quite complex, Krystal. We'll need to combine our skills to crack it."
-#     k "Agreed. I'll handle the algorithm while you focus on visual patterns."
-#     s "Got it! Teamwork makes the dream work, right?"
-#     k "Let's do this, Santos."
-#
-#     "Help Santos and Krystal decrypt the signal together."
-#     #call decryption_game.run_decryption_game
+    "Help Santos and Krystal decrypt the signal together."
+    #call decryption_game.run_decryption_game
 #
 # label dialogue_scene_3:
 #     scene laptop_bg
