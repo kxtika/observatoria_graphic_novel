@@ -155,8 +155,12 @@ label dialogue_scene_1:
 
     s "Krystal, do you see that?"
     k "See what, Santos? I'm busy analyzing the data from our last scan."
+    show flicker_of_light:
+        xalign 0.5
+        yalign 0.5
     s "There! A flicker of light in the distance. It could be a signal!"
     k "Hmm, let's take a look."
+    hide flicker_of_light
 
     menu:
         "Investigate the flicker":
