@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 50: expected an indented block
-    global finished_pieces
-     ^
+File "game/script.rpy", line 343: invalid syntax
+        jump outro_1
+              ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Apr  7 19:19:16 2024
+Mon Apr  8 20:45:36 2024
