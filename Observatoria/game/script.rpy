@@ -154,7 +154,8 @@ label dialogue_scene_1:
     show santos_image at right
     show krystal_image at left
 
-    s "Krystal, do you see that?"    k "See what, Santos? I'm busy analyzing the data from our last scan."
+    s "Krystal, do you see that?"
+    k "See what, Santos? I'm busy analyzing the data from our last scan."
     show flicker_of_light:
         xalign 0.5
         yalign 0.5

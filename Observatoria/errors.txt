@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 343: invalid syntax
-        jump outro_1
-              ^
+File "game/script.rpy", line 157: end of line expected.
+    s "Krystal, do you see that?"    k "See what, Santos? I'm busy analyzing the data from our last scan."
+                                     ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Apr  8 20:45:36 2024
+Tue Apr  9 00:15:37 2024
