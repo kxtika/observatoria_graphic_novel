@@ -125,6 +125,7 @@ label start:
     "As the development of technology advanced, so did space exploration."
     "Most of the work was done by computers, some by humans (yes, they still exist), and some by… cats."
     "Cats."
+    "They always loved laptops, didn't they?"
     "In the vastness of space, where stars shimmered like diamonds and planets danced in a cosmic ballet,"
     "two extraordinary felines, Santos and Krystal, embarked on a mission unlike any other."
     "Their destination: the Observatoria, a mysterious beacon deep in the heart of the galaxy,"
@@ -153,8 +154,7 @@ label dialogue_scene_1:
     show santos_image at right
     show krystal_image at left
 
-    s "Krystal, do you see that?"
-    k "See what, Santos? I'm busy analyzing the data from our last scan."
+    s "Krystal, do you see that?"    k "See what, Santos? I'm busy analyzing the data from our last scan."
     show flicker_of_light:
         xalign 0.5
         yalign 0.5
@@ -343,14 +343,13 @@ label decipher_message:
 
 
             if deciphered_message == "9145277031":
-                "You've just deciphered the Observatoria's coordinates. Well done!"
                 renpy.jump("outro_1")
             else:
-                "Sorry, the message is not decrypted correctly. Let's try again."
                 renpy.jump("decipher_message")
 
 label outro_1:
     scene observatoria_bg
+    "You've just deciphered the Observatoria's coordinates. Well done!"
     show krystal_image at left
     show santos_image at right
     s "We made it, Krystal! The Observatoria."
